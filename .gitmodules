@@ -1,0 +1,6 @@
+[submodule "nest"]
+	path = nest
+	url = https://github.com/Bapull/project_CodingSupporter-nestjs-deployment-repo.git
+[submodule "react"]
+	path = react
+	url = https://github.com/Bapull/project_CodingSupporter-react-deployment-repo.git
