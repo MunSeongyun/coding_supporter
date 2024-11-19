@@ -1,17 +1,5 @@
 version: '3'
 services:
-  chatdb:
-    image: mongo:6.0
-    environment:
-      - MONGO_INITDB_ROOT_USERNAME=user
-      - MONGO_INITDB_ROOT_PASSWORD=pass
-      - MONGO_INITDB_DATABASE=chat
-    ports:
-      - '27017:27017'
-    volumes:
-      - mychatdata:/data/db
-    networks:
-      - backend
   db:
     image: mysql:8.1.0
     environment:
@@ -29,8 +17,6 @@ services:
       - ./db/logs:/var/log/mysql
     networks:
       - backend
-    depends_on:
-      - chatdb
   nest:
     image: node:20-buster
     environment:
