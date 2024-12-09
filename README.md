@@ -21,3 +21,6 @@
    g. exit<br/>
 8. nest, react 폴더안의 .env.example를 복사해서 .env로 이름 변경후 환경변수 값 입력
 9. docker compose up -d
+10. docker compose exec nest /bin/bash
+11. npm run typeorm migration:run -- -d ./src/ormconfig.ts
+12. exit
